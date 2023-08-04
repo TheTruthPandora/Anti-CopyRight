@@ -5,7 +5,8 @@ wait(5)
 
 if game.PlaceId ~= targetPlaceId then
     for _, player in ipairs(game.Players:GetPlayers()) do
+				player:Kick("ANTI COPYRIGHT")
+		wait(.35)
         TeleportService:Teleport(targetPlaceId, player) -- 将玩家传送到目标游戏
-		player:Kick("NOCOPYRIGHT")
     end
 end
